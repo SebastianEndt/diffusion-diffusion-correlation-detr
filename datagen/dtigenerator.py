@@ -143,8 +143,8 @@ class DTIGenerator:
             # save compartment signals
             signal_list.append(comp_signals)
 
-            # calculate mean diffusivity of compartment (normed by factor 3 for a range near to [0,1])
-            md = np.mean([lmd1, lmd2, lmd3]) / 3
+            # calculate mean diffusivity of compartment
+            md = np.mean([lmd1, lmd2, lmd3])
             md_list.append(md)
 
             # calculate fractional anisotropy of compartment
